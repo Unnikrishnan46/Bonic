@@ -1,0 +1,191 @@
+.ShopAllProducts{
+    display: flex;
+    background: #f6f9fc;
+    margin-top: 1rem;
+}
+
+.ShopAllProducts-left{
+    padding: 0rem 1.5rem;
+    /* display: flex; */
+}
+
+.ShopAllProducts-filters{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem 2.5rem;
+    box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+    gap: 1rem;
+}
+
+.ShopAllProducts-filters-heading{
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ShopAllProducts-filters-heading h4{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: .1rem;
+}
+
+.ShopAllProducts-filters-categories h6{
+    font-size: 14px;
+    margin-bottom: .3rem;
+}
+
+.ShopAllProducts-filters-categories{
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ShopAllProducts-filters-categories-list{
+    margin-bottom: .5rem;
+}
+
+.ShopAllProducts-filters-categories-list p{
+    cursor: pointer;
+}
+
+.ShopAllProducts-filters-discount{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    border-bottom: 1px solid #f0f0f0;
+
+}
+
+.ShopAllProducts-filters-discount h6{
+    font-size: 14px;
+}
+
+.ShopAllProducts-filters-discount-list{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.ShopAllProducts-filters-discount-list p{
+    display: flex;
+    gap: 1rem;
+}
+
+.ShopAllProducts-filters-price{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.ShopAllProducts-filters-price-header h6{
+    font-size: 14px;
+}
+
+.ShopAllProducts-filters-price-display{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    gap: .5rem;
+}
+
+.ShopAllProducts-filters-price-display-min p{
+    font-size: 12px;
+}
+
+.ShopAllProducts-filters-price-display-min{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ShopAllProducts-filters-price-display-max{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ShopAllProducts-filters-price-display-max p{
+    font-size: 12px;
+}
+
+.ShopAllProducts-filters-price-display-min input{
+    padding: .5rem;
+    width: 4rem;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.ShopAllProducts-filters-price-display-max input{
+    padding: .5rem;
+    width: 4rem;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+
+
+
+
+
+/* ghgghfhg */
+
+
+/* .horizontal-slider {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    margin: 100px;
+} */
+
+.horizontal-slider .example-track {
+    /* top: 20px; */
+    height: 5px;
+}
+
+.example-track.example-track-0 {
+    background: gray;
+}
+
+.example-track.example-track-1 {
+    background: red;
+}
+
+.example-track.example-track-2 {
+    background: grey;
+}
+
+.horizontal-slider .example-thumb {
+    top: 1px;
+    width: 10px;
+    height: 10px;
+    /* line-height: 38px; */
+    border-radius: 50%;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 5px solid gray;
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width: 556px) {
+    .ShopAllProducts-left{
+        display: none;
+    }
+
+    .ShopAllProducts-heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .ShopAllProducts-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .ShopAllProductCard-row{
+        justify-content: center;
+        padding: 1rem;
+    }
+}

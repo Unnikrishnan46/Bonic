@@ -1,0 +1,83 @@
+.ShopAllProductCard-row {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.ShopAllProductCard-single-product {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/* .ShopAllProductCard-single-product:hover { */
+    .ShopAllProductCard-single-product-img img:hover {
+        transform: scale(1.1);
+    }
+
+/* } */
+
+.ShopAllProductCard-single-product-img {
+    display: flex;
+    justify-content: center;
+}
+
+.ShopAllProductCard-single-product-img img {
+    width: 14rem;
+    transition: all 1s ease;
+}
+
+.ShopAllProductCard-single-product-details {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.ShopAllProductCard-single-product-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.ShopAllProductCard-single-product-price {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.ShopAllProductCard-single-product-name p:nth-child(1) {
+    font-size: 14px;
+    display: inline-block;
+    width: 14.625rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ShopAllProductCard-single-product-name p:nth-child(2) {
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ShopAllProductCard-single-product-price p:nth-child(1) {
+    font-weight: 500;
+}
+
+.ShopAllProductCard-single-product-price p:nth-child(2) {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.ShopAllProductCard-single-product-price p:nth-child(3) {
+    color: rgb(28, 142, 28);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ShopAllProductCard-single-product-img i{
+    color: #c2c2c2;
+}

@@ -1,0 +1,91 @@
+.address-edit-form-main{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.address-edit-form-header{
+    display: flex;
+}
+
+.address-edit-form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.address-edit-form-header p{
+    color: #e94560;
+    font-size: 14px;
+}
+
+.address-edit-form-name-and-mobile{
+    display: flex;
+    justify-content: space-around;
+}
+
+.address-edit-form-name-and-mobile input{
+    border: 1px solid #e0e0e0;
+    height: 3rem;
+    padding: 1rem;
+    width: 49%;
+    border-radius: 2px;
+}
+
+.address-edit-form-name-and-mobile input:focus{
+    border: 2px solid #2874f0;
+}
+
+.address-edit-form-name-and-mobile select{
+    border: 1px solid #e0e0e0;
+    height: 3rem;
+    padding: 1rem;
+    width: 49%;
+    border-radius: 2px;
+}
+
+.address-edit-form-name-and-mobile select:focus{
+    border: 2px solid #2874f0;
+}
+
+.address-edit-form-name-and-mobile input::-webkit-outer-spin-button,
+.address-edit-form-name-and-mobile input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.address-field{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    height: 5rem;
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+.address-edit-form-address{
+    width: 100%;
+}
+
+.save-and-deliver-btn{
+    cursor: pointer;
+    background: #e94560;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border: none;
+    width: 12rem;
+    height: 2.5rem;
+    color: #fff;
+}
+
+.save-and-cancel-btn{
+    display: flex;
+    gap: 2rem;
+}
+
+.cancel-edit-btn{
+    background: transparent;
+    color: #e94560;
+    cursor: pointer;
+    font-size: 14;
+}

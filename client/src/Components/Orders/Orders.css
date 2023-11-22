@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Franklin&family=Open+Sans:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,700&family=Rubik&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+/* 
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Comic Neue', cursive;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Signika Negative', sans-serif;
+ */
+
+
+
+.orders-main-container{
+    background: #f6f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.orders-main-sub-container{
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.orders-search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orders-search-container input{
+    height: 40px;
+    width: 80%;
+    border: 1px solid #dbdbdb;
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+}
+
+.orders-search-container button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 40px;
+    border: 1px solid #dbdbdb;
+    padding: 8px;
+    font-size: 16;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    background: #2874f0;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.orders-search-container input:focus{
+    border: 1px solid #000;
+}
+
+.order-single-main-div{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(0,0,0,.15);
+    border-radius: 4px;
+    padding: .5rem;
+}
+
+.order-single-image-name{
+    display: flex;
+    align-items: center;
+}
+
+.order-single-product-name{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.order-single-product-price{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.order-single-canceled{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.order-single-img img{
+    width: 5rem;
+}
+
+.order-single-product-name p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 600px;
+    word-wrap: break-word;
+}
+
+.order-single-canceled span{
+    padding: .1rem;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: red;
+}
+
+.span-{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+
+.pleaseda{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+.order-single-main-div:hover{
+    z-index: 1;
+    box-shadow: 0 1px 12px 2px #dbdbdb;
+}

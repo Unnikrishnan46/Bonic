@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Franklin&family=Open+Sans:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,700&family=Rubik&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+/* 
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Comic Neue', cursive;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Signika Negative', sans-serif;
+ */
+
+.product-detail-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.product-detail-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.product-detail-right {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.product-detail-main-image {
+    display: flex;
+    flex-wrap: wrap;
+    height: 25rem;
+    width: 25rem;
+}
+
+.product-detail-image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.product-detail-image-row {
+    margin-top: .2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prod-main-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-detail-image-one {
+    margin-top: .5rem;
+    border-radius: 5px;
+    height: 6.2rem;
+    width: 6.2rem;
+    cursor: pointer;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 0 1px;
+}
+
+.product-detail-image-one img {
+    height: 100%;
+    width: 100%;
+}
+
+.product-detail-name-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding-right: 3rem;
+}
+
+.product-detail-name {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.product-detail-name-container b {
+    color: #0f3460;
+    text-transform: uppercase;
+}
+
+.product-details-price-container {
+    font-family: 'Signika Negative', sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.product-detail-discount-container span {
+    top: 0;
+    left: 0;
+    background: #e94560;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.product-detail-discount-container {
+    margin-top: 2rem;
+}
+
+.product-details-price-container h6 {
+    margin-left: 1rem;
+    text-decoration: line-through;
+}
+
+.product-details-btns {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.product-details-add-to-cart-btn {
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #e94560;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    color: #e94560;
+    transition: all .5s;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.product-details-add-to-cart-btn:hover {
+    background: #e94560;
+    color: #fff;
+}
+
+.product-details-buy-now-btn{
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #f9b008;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    color: #e94560;
+    transition: all .5s;
+    font-size: medium;
+    font-weight: 600;
+}
+
+
+.product-details-buy-now-btn:hover{
+    background: #f9b008;
+    color: #fff;
+}
+
+.about-product-details-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.about-product-details-container p{
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 5rem;
+    line-height: 1.2rem;
+}

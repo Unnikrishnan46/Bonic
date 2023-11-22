@@ -1,0 +1,28 @@
+.action-btn-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+
+.action-btn-container button {
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.25em;
+    padding: 1rem;
+}
+
+.action-btn-container button:hover {
+    box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
+        8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+        17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+        36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+        99px 72px 143px rgba(135, 133, 133, 0.08);
+}
+
+.action-btn-container button i {
+    color: #6260d7;
+    font-size: larger;
+}

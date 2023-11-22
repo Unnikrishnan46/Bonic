@@ -1,0 +1,9 @@
+.Dcard-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dcard-img img{
+    width: 10rem !important;
+}

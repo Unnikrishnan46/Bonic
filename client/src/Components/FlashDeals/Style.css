@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@700;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+/* 
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Comic Neue', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Signika Negative', sans-serif;
+ */
+
+.flash {
+  background: #f6f9fc;
+  padding: 3.125rem 0;
+}
+
+.flashProductName {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bottom-flash-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-flash-card {
+  color: #e94560;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+}
+
+.price-flash-card h6{
+  margin-left: .5rem;
+}
+
+
+.discount-price-lined {
+  color: #0f3460;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+
+.add-to-cart-btn {
+  cursor: pointer;
+  padding: .8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart-btn i {
+  transition: all .5s;
+  font-size: larger;
+}
+
+.add-to-cart-btn:hover i {
+    transform: scale(1.1);
+}
+
+.product:hover {
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+  transform: scale(1.05);
+}
+
+.product:hover .add-to-cart-btn{
+  opacity: 1;
+}
+
+.product-like i{
+  backdrop-filter: red;
+}

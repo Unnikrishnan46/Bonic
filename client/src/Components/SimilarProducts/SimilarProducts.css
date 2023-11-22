@@ -1,0 +1,10 @@
+.similar-products-main-container{
+    margin-left: 5rem;
+    margin-right: 3rem;
+    margin-top: 5rem;
+}
+
+.similar-products-row{
+    display: flex;
+    flex-wrap: wrap;
+}

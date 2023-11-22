@@ -1,0 +1,51 @@
+.not-loggedin {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.need-login-img{
+    width: 25rem;
+    /* mix-blend-mode: multiply;
+    filter: contrast(1); */
+    animation: need-login-pulse 1.5s infinite;
+
+}
+
+.need-login-img:hover {
+    filter: drop-shadow(0 0 10px #d64141);
+}
+
+@keyframes need-login-pulse {
+    0% {
+        filter: none;
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px red);
+    }
+
+    100% {
+        filter: none;
+    }
+}
+
+.not-loggedin button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    background: #d64141;
+    color: #fff;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.not-loggedin button:hover {
+    transition: all .3s;
+    outline: 1px solid #d64141;
+    outline-offset: 2px;
+}

@@ -1,0 +1,45 @@
+.CancelOrderModal-header{
+    display: flex;
+    padding: .5rem;
+    border-bottom: 1px solid rgba(76, 76, 80, 0.9);
+}
+
+.CancelOrderModal-content{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    align-items: center;
+}
+
+.CancelOrderModal-content-right img{
+    width: 10rem;
+}
+
+.CancelOrderModal-footer-content p{
+    font-size: 12px;
+}
+
+.CancelOrderModal-cancel-btn{
+    background: #e94560;
+    height: 2rem;
+    width: 8rem;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.CancelOrderModal-dont-cancel-btn{
+    background-color: red;
+    height: 2rem;
+    width: 8rem;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.CancelOrderModal-footer-btns{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}

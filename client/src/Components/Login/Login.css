@@ -1,0 +1,47 @@
+.log-btn button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.4em;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   .log-btn button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .log-btn button:hover {
+    color: #fff;
+   }
+   
+   .log-btn button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .log-btn button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .log-btn button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }

@@ -1,0 +1,60 @@
+.ProductCard-main {
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 3px 11px 3px rgba(4, 0, 0, 0.08);
+    margin: 10px;
+    transition: all 0.5s;
+    width: 18rem;
+    height: 23rem;
+}
+
+.ProductCard-img-container {
+    display: flex;
+}
+
+.ProductCard-img {
+    height: auto;
+    width: 100%;
+}
+
+.ProductCard-discount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e94560;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 50px;
+    color: #fff;
+    margin: 10px;
+}
+
+.ProductCard-main h3 {
+    font-weight: 400;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ProductCard-main .rate i {
+    font-size: 15px;
+    color: #ffcd4e;
+    margin: 5px 5px 5px 0;
+}
+
+.ProductCard-wishlist-icon i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.ProductCard-main:hover{
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.05);
+}

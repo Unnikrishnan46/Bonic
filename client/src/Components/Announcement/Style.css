@@ -1,0 +1,36 @@
+.annocument-main-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.annocument-one{
+    width: 30%;
+    height: 21.25rem;
+}
+
+.annocument-two{
+    width: 68%;
+    height: 21.25rem;
+}
+
+@media (max-width: 1200px) {
+    .annocument-one{
+        width: 48%;
+    }
+    .annocument-two{
+        width: 48%;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .annocument-main-div {
+      flex-direction: column;
+      gap: .5rem;
+    }
+    .annocument-one{
+        width: 98%;
+    }
+    .annocument-two{
+        width: 98%;
+    }
+  }

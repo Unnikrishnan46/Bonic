@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Franklin&family=Open+Sans:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400;1,700&family=Rubik&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+/* 
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Comic Neue', cursive;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Signika Negative', sans-serif;
+ */
+
+
+.OrderDetailPage-main-container{
+    display: flex;
+    background: #f6f9fc;
+    justify-content: center;
+}
+
+.OrderDetailPage-sub-main-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.OrderDetailPage-first-div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+}
+
+.OrderDetailPage-first-div p{
+    font-size: 14px;
+}
+
+.OrderDetailPage-first-div-ordername h4{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.OrderDetailPage-second-div{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+}
+
+.OrderDetailPage-second-div-img img{
+    width: 10rem;
+}
+
+.OrderDetailPage-second-div-product-details{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.OrderDetailPage-second-div-product-details p{
+    font-size: 10px;
+}
+
+.OrderDetailPage-second-div-progress-div{
+    display: flex;
+    align-items: center;
+}
+
+
+.OrderDetailPage-second-div-right{
+    display: flex;
+    align-items: center;
+}
+
+.OrderDetailPage-second-div-right button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.OrderDetailPage-third-div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
+}
+
+/* .OrderDetailPage-third-div-header{
+    
+} */
+
+.OrderDetailPage-third-div-header{
+    padding: 1rem;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.OrderDetailPage-third-div-single-product{
+    display: flex;
+    padding: 1rem;
+    background: #fff;
+}
+
+.OrderDetailPage-third-div-left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.OrderDetailPage-third-div-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OrderDetailPage-third-div-img img{
+    width: 8rem;
+}
+
+.OrderDetailPage-third-div-product-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.customModal{
+    background: #fff;
+}
+
+.customModal .CancelOrderModal-cancel-btn{
+    background: #e94560;
+    color: #fff;
+}
+
+.customModal .CancelOrderModal-dont-cancel-btn{
+    background: rgba(153, 153, 153, 0.3);
+    color: #e94560;
+}
