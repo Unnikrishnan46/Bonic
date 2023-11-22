@@ -35,7 +35,7 @@ function CODPannel() {
             }
             const docRef = collection(firestore, "orders");
             await addDoc(docRef, orderInformation).then((doc)=>{
-                window.location.href = `http://localhost:3000/v1/orderSuccess?reference_id=${doc.id}`
+                window.location.href = `/v1/orderSuccess?reference_id=${doc.id}`
             }).catch(error=>console.log(error))
             console.log('Order confirmed!');
 
