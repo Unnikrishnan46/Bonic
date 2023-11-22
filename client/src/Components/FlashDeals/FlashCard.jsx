@@ -26,6 +26,7 @@ const PrevArrow = (props) => {
 
 function FlashCard({ products, addToWishlist ,removeWishlistItem}) {
   const wishlistState = useSelector((state)=>state.wishlistState)
+  console.log("check ",wishlistState.wishlistItems);
   const goToSingleProductPage = (productId) => {
     window.location.href = `/v1/productPage/id:${productId}`
   }
@@ -68,11 +69,17 @@ function FlashCard({ products, addToWishlist ,removeWishlistItem}) {
   return (
     <>
       <Slider {...settings}>
-        {products && wishlistState.wishlistItems ? products.map((productItems, index) => {
+        {products ? products.map((productItems, index) => {
           const discountedPrice = productItems.productPrice - Math.round((productItems.productDiscount / 100) * productItems.productPrice);
-          const isProductInWishlist = wishlistState.wishlistItems.product.some(
-            (item) => item.id === productItems.id
-          );
+          let isProductInWishlist;
+          if(wishlistState.wishlistItems){
+            isProductInWishlist= wishlistState?.wishlistItems.product.some(
+              (item) => item.id === productItems.id
+            );
+          }
+          // const isProductInWishlist = wishlistState?.wishlistItems.product.some(
+          //   (item) => item.id === productItems.id
+          // );
           return (
             <div className='box' key={index}>
               <div className='product mtop' style={{ maxHeight: "40rem", minHeight: "20rem" }}>

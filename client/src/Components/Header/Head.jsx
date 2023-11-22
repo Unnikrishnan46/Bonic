@@ -7,7 +7,7 @@ function Head() {
         <div className='container d_flex'>
           <div className='left row' style={{display:"flex"}}>
             <i className='fa fa-phone'></i>
-            <label> +88012 3456 7894</label>
+            <label> +91 73563 73621</label>
             <i className='fa fa-envelope'></i>
             <label> erayamcode2004@gmail.com</label>
           </div>
