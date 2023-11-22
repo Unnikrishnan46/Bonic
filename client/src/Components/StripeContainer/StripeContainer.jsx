@@ -15,7 +15,7 @@ function StripeContainer() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    axios.get("http://localhost:5252/config").then(async (response) => {
+    axios.get("https://bonic-server-jade.vercel.app/config").then(async (response) => {
       const { publishableKey } = await response.data;
       setStripePromise(loadStripe(publishableKey))
     }).catch((error) => {
@@ -25,7 +25,7 @@ function StripeContainer() {
 
 
   useEffect(() => {
-    axios.post("http://localhost:5252/create-payment-intent",{orderUserData:checkoutData.userCheckoutData,orderProductData:checkoutData.checkoutProducts,totalPayable:checkoutData.totalPayablePrice,userEmail:user.userData.email,userId:user.userData.uid}).then(async (response) => {
+    axios.post("https://bonic-server-jade.vercel.app/create-payment-intent",{orderUserData:checkoutData.userCheckoutData,orderProductData:checkoutData.checkoutProducts,totalPayable:checkoutData.totalPayablePrice,userEmail:user.userData.email,userId:user.userData.uid}).then(async (response) => {
       const { clientSecret } = await response.data;
       const {orderInformation} = await response.data;
       dispatch(setOrderInformation(orderInformation))
