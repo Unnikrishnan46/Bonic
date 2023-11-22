@@ -30,7 +30,7 @@ function StripeForm() {
         }
         await addDoc(docRef, checkoutData.orderInformation).then((doc)=>{
             setOrderId(doc.id)
-            window.location.href= `http://localhost:3000/v1/orderSuccess?reference_id=${doc.id}`
+            window.location.href= `https://bonic-server-jade.vercel.app/v1/orderSuccess?reference_id=${doc.id}`
         }).catch(error=>console.log(error))
         
       }
@@ -45,7 +45,7 @@ function StripeForm() {
         const {error} = await stripe.confirmPayment({
             elements,
             confirmParams: {
-                return_url: `http://localhost:3000/v1/orderSuccess?reference_id=${orderId}`,
+                return_url: `https://bonic-server-jade.vercel.app/v1/orderSuccess?reference_id=${orderId}`,
                 receipt_email: 'erayamcode2004@gmail.com',
             },
             onSuccess: handlePaymentSuccess(),
